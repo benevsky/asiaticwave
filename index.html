@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="ru" data-theme="mono">
+<html lang="ru" data-theme="sunrise">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -9,8 +9,8 @@
   <meta property="og:description" content="Соединяем мировые бренды с рынками Центральной Азии." />
   <meta property="og:type" content="website" />
 
-  <!-- Favicon: упрощённая версия логотипа (3 заливные волны + рамка) -->
-  <link rel="icon" href="data:image/svg+xml,%3Csvg%20viewBox%3D%220%200%20100%20100%22%20width%3D%22100%22%20height%3D%22100%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20fill%3D%22none%22%20aria-label%3D%22Asiatic%20Wave%22%3E%0A%20%20%20%20%20%20%3Cdefs%3E%0A%20%20%20%20%20%20%20%20%3ClinearGradient%20id%3D%22awfav-frame%22%20x1%3D%2220%25%22%20y1%3D%220%25%22%20x2%3D%2280%25%22%20y2%3D%22100%25%22%3E%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%230564a8%22%2F%3E%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%2300b2be%22%2F%3E%3C%2FlinearGradient%3E%0A%20%20%20%20%20%20%20%20%3ClinearGradient%20id%3D%22awfav-sky%22%20%20%20x1%3D%220%25%22%20y1%3D%220%25%22%20x2%3D%220%25%22%20y2%3D%22100%25%22%3E%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%23E5F6FB%22%2F%3E%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%23BCDFED%22%2F%3E%3C%2FlinearGradient%3E%0A%20%20%20%20%20%20%20%20%3ClinearGradient%20id%3D%22awfav-ocean%22%20x1%3D%220%25%22%20y1%3D%220%25%22%20x2%3D%220%25%22%20y2%3D%22100%25%22%3E%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%23005E7A%22%2F%3E%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%23011628%22%2F%3E%3C%2FlinearGradient%3E%0A%20%20%20%20%20%20%20%20%3ClinearGradient%20id%3D%22awfav-wave%22%20%20x1%3D%2220%25%22%20y1%3D%225%25%22%20x2%3D%2275%25%22%20y2%3D%2295%25%22%3E%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%239AF0F8%22%2F%3E%3Cstop%20offset%3D%2222%25%22%20stop-color%3D%22%2300b2be%22%2F%3E%3Cstop%20offset%3D%2260%25%22%20stop-color%3D%22%230564a8%22%2F%3E%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%23022b50%22%2F%3E%3C%2FlinearGradient%3E%0A%20%20%20%20%20%20%20%20%3ClinearGradient%20id%3D%22awfav-curl%22%20%20x1%3D%220%25%22%20y1%3D%220%25%22%20x2%3D%2230%25%22%20y2%3D%22100%25%22%3E%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%23CEFFFF%22%2F%3E%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%2344D8E6%22%2F%3E%3C%2FlinearGradient%3E%0A%20%20%20%20%20%20%20%20%3CclipPath%20id%3D%22awfav-clip%22%3E%3Cpolygon%20points%3D%2250%2C10%2090%2C50%2050%2C90%2010%2C50%22%2F%3E%3C%2FclipPath%3E%0A%20%20%20%20%20%20%3C%2Fdefs%3E%0A%20%20%20%20%20%20%3Cg%20clip-path%3D%22url%28%23awfav-clip%29%22%3E%0A%20%20%20%20%20%20%20%20%3Crect%20x%3D%220%22%20y%3D%220%22%20width%3D%22100%22%20height%3D%22100%22%20fill%3D%22url%28%23awfav-sky%29%22%2F%3E%0A%20%20%20%20%20%20%20%20%3Crect%20x%3D%220%22%20y%3D%2250%22%20width%3D%22100%22%20height%3D%2250%22%20fill%3D%22url%28%23awfav-ocean%29%22%2F%3E%0A%20%20%20%20%20%20%20%20%3Cpath%20d%3D%22M%2068%2C44%20C%2073%2C40%2081%2C40%2087%2C44%20C%2089%2C47%2088%2C52%2086%2C53%20C%2081%2C51%2076%2C51%2071%2C52%20C%2069%2C50%2068%2C47%2068%2C44%20Z%22%20fill%3D%22%23008899%22%20opacity%3D%220.6%22%2F%3E%0A%20%20%20%20%20%20%20%20%3Cpath%20d%3D%22M%2065%2C37%20C%2057%2C26%2049%2C23%2043%2C27%20C%2035%2C31%2027%2C40%2021%2C52%20C%2017%2C59%2017%2C65%2021%2C68%20C%2029%2C73%2045%2C73%2059%2C68%20C%2071%2C64%2080%2C57%2084%2C47%20C%2087%2C41%2084%2C37%2078%2C35%20C%2073%2C33%2069%2C34%2065%2C37%20Z%22%20fill%3D%22url%28%23awfav-wave%29%22%2F%3E%0A%20%20%20%20%20%20%20%20%3Cpath%20d%3D%22M%2043%2C27%20C%2035%2C32%2028%2C41%2022%2C53%20C%2027%2C43%2034%2C34%2041%2C29%20Z%22%20fill%3D%22white%22%20opacity%3D%220.1%22%2F%3E%0A%20%20%20%20%20%20%20%20%3Cpath%20d%3D%22M%2043%2C27%20C%2041%2C19%2045%2C11%2054%2C10%20C%2062%2C9%2070%2C13%2073%2C21%20C%2075%2C26%2075%2C33%2073%2C37%20C%2071%2C37%2068%2C35%2066%2C32%20C%2062%2C28%2056%2C25%2050%2C24%20C%2046%2C24%2044%2C25%2043%2C27%20Z%22%20fill%3D%22url%28%23awfav-curl%29%22%20opacity%3D%220.92%22%2F%3E%0A%20%20%20%20%20%20%20%20%3Cpath%20d%3D%22M%2050%2C24%20C%2048%2C19%2052%2C13%2058%2C12%20C%2065%2C11%2071%2C15%2073%2C22%20C%2074%2C27%2073%2C31%2071%2C33%20C%2069%2C33%2067%2C30%2065%2C28%20C%2061%2C25%2055%2C23%2050%2C24%20Z%22%20fill%3D%22%23003E52%22%20opacity%3D%220.65%22%2F%3E%0A%20%20%20%20%20%20%20%20%3Cellipse%20cx%3D%2254%22%20cy%3D%2213%22%20rx%3D%224%22%20%20%20ry%3D%222.2%22%20fill%3D%22white%22%20opacity%3D%220.85%22%2F%3E%0A%20%20%20%20%20%20%20%20%3Cellipse%20cx%3D%2262%22%20cy%3D%2211%22%20rx%3D%223%22%20%20%20ry%3D%221.8%22%20fill%3D%22white%22%20opacity%3D%220.80%22%2F%3E%0A%20%20%20%20%20%20%20%20%3Cellipse%20cx%3D%2260%22%20cy%3D%2217%22%20rx%3D%224.5%22%20ry%3D%222%22%20%20%20fill%3D%22white%22%20opacity%3D%220.72%22%2F%3E%0A%20%20%20%20%20%20%20%20%3Cellipse%20cx%3D%2248%22%20cy%3D%2220%22%20rx%3D%222.5%22%20ry%3D%221.8%22%20fill%3D%22white%22%20opacity%3D%220.68%22%2F%3E%0A%20%20%20%20%20%20%20%20%3Cellipse%20cx%3D%2268%22%20cy%3D%2215%22%20rx%3D%222.5%22%20ry%3D%221.5%22%20fill%3D%22white%22%20opacity%3D%220.65%22%2F%3E%0A%20%20%20%20%20%20%20%20%3Cellipse%20cx%3D%2244%22%20cy%3D%2225%22%20rx%3D%222%22%20%20%20ry%3D%221.4%22%20fill%3D%22white%22%20opacity%3D%220.55%22%2F%3E%0A%20%20%20%20%20%20%20%20%3Cpath%20d%3D%22M%2043%2C28%20C%2038%2C34%2033%2C43%2029%2C54%22%20stroke%3D%22white%22%20stroke-width%3D%221.2%22%20stroke-linecap%3D%22round%22%20fill%3D%22none%22%20opacity%3D%220.22%22%2F%3E%0A%20%20%20%20%20%20%20%20%3Cpath%20d%3D%22M%2046%2C30%20C%2042%2C37%2038%2C46%2035%2C57%22%20stroke%3D%22white%22%20stroke-width%3D%220.9%22%20stroke-linecap%3D%22round%22%20fill%3D%22none%22%20opacity%3D%220.15%22%2F%3E%0A%20%20%20%20%20%20%20%20%3Cpath%20d%3D%22M%2026%2C78%20Q%2040%2C76%2052%2C78%20Q%2064%2C80%2074%2C77%22%20stroke%3D%22%234ABCD8%22%20stroke-width%3D%220.9%22%20stroke-linecap%3D%22round%22%20fill%3D%22none%22%20opacity%3D%220.5%22%2F%3E%0A%20%20%20%20%20%20%20%20%3Cpath%20d%3D%22M%2033%2C84%20Q%2045%2C83%2056%2C84%20Q%2065%2C85%2074%2C83%22%20stroke%3D%22%234ABCD8%22%20stroke-width%3D%220.7%22%20stroke-linecap%3D%22round%22%20fill%3D%22none%22%20opacity%3D%220.35%22%2F%3E%0A%20%20%20%20%20%20%3C%2Fg%3E%0A%20%20%20%20%20%20%3Cpolygon%20points%3D%2250%2C10%2090%2C50%2050%2C90%2010%2C50%22%20stroke%3D%22url%28%23awfav-frame%29%22%20stroke-width%3D%223%22%20stroke-linejoin%3D%22miter%22%20stroke-miterlimit%3D%228%22%20fill%3D%22none%22%2F%3E%0A%20%20%20%20%3C%2Fsvg%3E" />
+  <!-- Favicon: знак Sunrise — ромб, волна и солнце (утверждённый вариант логотипа) -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg%20viewBox%3D%220%200%20120%20120%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20aria-label%3D%22Asiatic%20Wave%22%3E%0A%3Cdefs%3E%0A%3ClinearGradient%20id%3D%22awfav-t%22%20x1%3D%220%25%22%20y1%3D%220%25%22%20x2%3D%22100%25%22%20y2%3D%22100%25%22%3E%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%2311395B%22%2F%3E%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%23071D31%22%2F%3E%3C%2FlinearGradient%3E%0A%3ClinearGradient%20id%3D%22awfav-s%22%20x1%3D%2230%25%22%20y1%3D%220%25%22%20x2%3D%2270%25%22%20y2%3D%22100%25%22%3E%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%23F6E0A3%22%2F%3E%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%23C79A4C%22%2F%3E%3C%2FlinearGradient%3E%0A%3ClinearGradient%20id%3D%22awfav-w%22%20x1%3D%220%25%22%20y1%3D%220%25%22%20x2%3D%220%25%22%20y2%3D%22100%25%22%3E%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%23F2D58C%22%2F%3E%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%23B98F45%22%2F%3E%3C%2FlinearGradient%3E%0A%3CclipPath%20id%3D%22awfav-clip%22%3E%3Cpolygon%20points%3D%2260%2C22%2098%2C60%2060%2C98%2022%2C60%22%2F%3E%3C%2FclipPath%3E%0A%3C%2Fdefs%3E%0A%3Crect%20x%3D%2210%22%20y%3D%2210%22%20width%3D%22100%22%20height%3D%22100%22%20rx%3D%2224%22%20fill%3D%22url%28%23awfav-t%29%22%2F%3E%0A%3Cg%20clip-path%3D%22url%28%23awfav-clip%29%22%3E%0A%3Ccircle%20cx%3D%2266%22%20cy%3D%2242%22%20r%3D%229%22%20fill%3D%22url%28%23awfav-s%29%22%2F%3E%0A%3Cpath%20d%3D%22M20%2066%20C%2032%2063%2C%2042%2059%2C%2052%2056.5%20C%2062%2054.5%2C%2072%2057.5%2C%2080%2063%20C%2084%2065.8%2C%2088%2069%2C%2092%2073%20L%2098%2080%20L%2098%20100%20L%2020%20100%20Z%22%20fill%3D%22%231D5680%22%2F%3E%0A%3Cpath%20d%3D%22M20%2070%20C%2027%2068.5%2C%2033%2066%2C%2038.5%2062%20C%2043.5%2058.4%2C%2046.5%2053.5%2C%2046%2049.5%20C%2049%2047.3%2C%2052.2%2048.4%2C%2052.9%2051.2%20C%2053.4%2053.6%2C%2051.7%2055.4%2C%2048.9%2055.1%20C%2051.3%2058.9%2C%2056%2062.5%2C%2062%2064.5%20C%2072%2067.5%2C%2082%2066.5%2C%2092%2062%20L%2098%2060%20L%2098%20100%20L%2020%20100%20Z%22%20fill%3D%22url%28%23awfav-w%29%22%2F%3E%0A%3C%2Fg%3E%0A%3Cpolygon%20points%3D%2260%2C22%2098%2C60%2060%2C98%2022%2C60%22%20stroke%3D%22%23FBF8F2%22%20stroke-width%3D%223.2%22%20stroke-linejoin%3D%22round%22%20fill%3D%22none%22%2F%3E%0A%3C%2Fsvg%3E" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Inter:wght@400;500;600&family=Oswald:wght@300;500;600&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
@@ -439,131 +439,115 @@
     /* ═══════════ ЦВЕТОВЫЕ ТЕМЫ ═══════════
        Каждая тема задаёт: акценты (+градиентные пары A/B для кнопок),
        фоновые грады секций, тон тёмных полос (--dark) и вторичные фоны. */
-    :root, [data-theme="mono"] {
+    /* Единая палитра источника — знак Sunrise (logo.html): глубокий синий,
+       благородное золото, тёплый песок/слоновая кость, волновой бирюзовый.
+       Первые 5 тем — сдержанные раскладки этих цветов. Graphite и Terracotta —
+       две более смелые/контрастные раскладки той же палитры (см. ниже). */
+    :root, [data-theme="sunrise"] {
       --bg-primary: #FFFFFF;
-      --text-primary: #141416;
-      --text-muted: #6E6E73;
-      /* === Тема 1 — Editorial: строгая белая с чёрным акцентом === */
-      --accent: #141416;
-      --accent-hover: #2C2C30;
-      --accentA: #17171A; --accentB: #3D3D44;
-      --accent2: #141416;
-      --accent2-hover: #2C2C30;
-      --accent2A: #17171A; --accent2B: #3D3D44;
-      --bg-secondary: #F6F6F4;
-      --border: #E4E4E0;
-      --grad-1: #FFFFFF; --grad-2: #F4F4F2; --grad-3: #E8E8E4;
-      --dark: #0E0E10;
+      --text-primary: #12283A;
+      --text-muted: #6B7A87;
+      /* === Тема 1 — Sunrise: флагманская, синий + золото поровну === */
+      --accent: #0B2A44;
+      --accent-hover: #071D31;
+      --accentA: #11395B; --accentB: #071D31;
+      --accent2: #C6A15B;
+      --accent2-hover: #A9823B;
+      --accent2A: #F2D58C; --accent2B: #B98F45;
+      --bg-secondary: #F4EFE6;
+      --border: #E4DCCB;
+      --grad-1: #FBF8F2; --grad-2: #F4EFE6; --grad-3: #E9DEC7;
+      --dark: #071D31;
     }
-    [data-theme="ocean"] {
-      --text-primary: #10222F;
-      --text-muted: #4E6B80;
-      --border: #C9E2F0;
-      /* === Тема 2 — Океан + Коралл === */
-      --accent: #0173C4;
-      --accent-hover: #015C9D;
-      --accentA: #0173C4; --accentB: #00A7C4;
-      --accent2: #FF5A36;
-      --accent2-hover: #E5461F;
-      --accent2A: #FF5A36; --accent2B: #FF8A54;
-      --bg-secondary: #EBF6FC;
-      --grad-1: #E2F4FD; --grad-2: #BCE3F8; --grad-3: #8CCEF0;
-      --dark: #062033;
+    [data-theme="editorial"] {
+      --text-primary: #12283A;
+      --text-muted: #6E7B87;
+      /* === Тема 2 — Editorial: строгая, один акцент — тёмный navy === */
+      --accent: #12283A;
+      --accent-hover: #24425C;
+      --accentA: #12283A; --accentB: #24425C;
+      --accent2: #12283A;
+      --accent2-hover: #24425C;
+      --accent2A: #12283A; --accent2B: #24425C;
+      --bg-secondary: #F6F4EF;
+      --border: #E4E1D8;
+      --grad-1: #FFFFFF; --grad-2: #F6F3ED; --grad-3: #ECE6D8;
+      --dark: #12283A;
     }
-    [data-theme="lagoon"] {
-      --text-primary: #0E2B33;
-      --text-muted: #4A7280;
-      /* === Тема 3 — Лагуна (голубая) === */
-      --accent: #009FBE;
-      --accent-hover: #00819B;
-      --accentA: #00A9C9; --accentB: #38CBE0;
-      --accent2: #FF8A5C;
-      --accent2-hover: #E76F41;
-      --accent2A: #FF8A5C; --accent2B: #FFAD82;
-      --bg-secondary: #EFFBFD;
-      --border: #C8E9F1;
-      --grad-1: #E6FBFF; --grad-2: #BEEFF8; --grad-3: #8CDDEF;
-      --dark: #05262E;
-    }
-    [data-theme="royal"] {
-      --text-primary: #101B36;
-      --text-muted: #58658A;
-      /* === Тема 4 — Роял (синяя) === */
-      --accent: #2B50DB;
-      --accent-hover: #1F3EB4;
-      --accentA: #2B50DB; --accentB: #5A7BEB;
-      --accent2: #E3B04B;
-      --accent2-hover: #C9962F;
-      --accent2A: #E3B04B; --accent2B: #F3CC77;
-      --bg-secondary: #F1F5FF;
-      --border: #D5DFF5;
-      --grad-1: #ECF1FF; --grad-2: #C9D9FB; --grad-3: #A0BCF5;
-      --dark: #0B1B45;
+    [data-theme="golden"] {
+      --text-primary: #2E2415;
+      --text-muted: #8A7358;
+      /* === Тема 3 — Golden Hour: тёплая, песочно-золотая, больше цвета === */
+      --accent: #C6A15B;
+      --accent-hover: #A9823B;
+      --accentA: #F6E0A3; --accentB: #C79A4C;
+      --accent2: #0B2A44;
+      --accent2-hover: #071D31;
+      --accent2A: #11395B; --accent2B: #071D31;
+      --bg-secondary: #F4EFE6;
+      --border: #E9DDC0;
+      --grad-1: #FBF8F2; --grad-2: #F0E3C4; --grad-3: #E3CB96;
+      --dark: #3B2A12;
     }
     [data-theme="sapphire"] {
-      /* === Тема 5 — Сапфир (глубокий синий) === */
-      --accent: #15489E;
-      --accent-hover: #0F3A82;
-      --accentA: #15489E; --accentB: #2E6BD1;
-      --accent2: #D9A441;
-      --accent2-hover: #B98730;
-      --accent2A: #D9A441; --accent2B: #EFC468;
-      --bg-secondary: #F2F6FC;
-      --border: #D9E3F1;
-      --grad-1: #E9F1FC; --grad-2: #C8DCF7; --grad-3: #A2C3EF;
-      --dark: #0A1C3A;
+      --text-primary: #12283A;
+      --text-muted: #5A7089;
+      /* === Тема 4 — Sapphire: холодная, премиальная, синий с золотой искрой === */
+      --accent: #0B2A44;
+      --accent-hover: #071D31;
+      --accentA: #17466B; --accentB: #071D31;
+      --accent2: #C6A15B;
+      --accent2-hover: #A9823B;
+      --accent2A: #E3CB96; --accent2B: #C6A15B;
+      --bg-secondary: #EAF0F3;
+      --border: #D7E2E9;
+      --grad-1: #FBF8F2; --grad-2: #E4EEF3; --grad-3: #C9DCE6;
+      --dark: #071D31;
     }
-    [data-theme="aqua"] {
-      /* === Тема 6 — Аква === */
-      --accent: #0E93A8;
-      --accent-hover: #0B7384;
-      --accentA: #0E93A8; --accentB: #17B9CF;
-      --accent2: #F26D4F;
-      --accent2-hover: #D6552F;
-      --accent2A: #F26D4F; --accent2B: #FF9070;
-      --bg-secondary: #F0FAFB;
-      --border: #D5EAEE;
-      --grad-1: #E2F9FC; --grad-2: #BCEBF2; --grad-3: #90DBE8;
-      --dark: #06282E;
+    [data-theme="wave"] {
+      --text-primary: #16323C;
+      --text-muted: #5C7986;
+      /* === Тема 5 — Wave: свежая, бирюзово-волновая === */
+      --accent: #2E6E7E;
+      --accent-hover: #23545F;
+      --accentA: #3E8A9B; --accentB: #1D5680;
+      --accent2: #C6A15B;
+      --accent2-hover: #A9823B;
+      --accent2A: #E3CB96; --accent2B: #C6A15B;
+      --bg-secondary: #EEF5F4;
+      --border: #D8E7E6;
+      --grad-1: #FBF8F2; --grad-2: #E3F1F0; --grad-3: #C3E1DF;
+      --dark: #0F2E38;
     }
-    [data-theme="azure"] {
-      /* === Тема 7 — Нефрит === */
-      --accent: #0A9E76;
-      --accent-hover: #087F5E;
-      --accentA: #0A9E76; --accentB: #13C494;
-      --accent2: #E8A13B;
-      --accent2-hover: #C9862A;
-      --accent2A: #E8A13B; --accent2B: #F5BE62;
-      --bg-secondary: #F0FBF7;
-      --border: #C4E9DB;
-      --grad-1: #E5F9F1; --grad-2: #C4EFDF; --grad-3: #9CE2CA;
-      --dark: #06251C;
+    [data-theme="graphite"] {
+      --text-primary: #1C1C1E;
+      --text-muted: #6E6E73;
+      /* === Тема 6 — Graphite: смелая, чёрно-золотая, максимальный контраст === */
+      --accent: #1C1C1E;
+      --accent-hover: #000000;
+      --accentA: #2A2A2E; --accentB: #0D0D0F;
+      --accent2: #C6A15B;
+      --accent2-hover: #A9823B;
+      --accent2A: #F6E0A3; --accent2B: #C79A4C;
+      --bg-secondary: #EFEDEA;
+      --border: #DEDBD5;
+      --grad-1: #FAF9F7; --grad-2: #EDEAE4; --grad-3: #D8D2C5;
+      --dark: #0D0D0F;
     }
-    [data-theme="sky"] {
-      --border: #F0C8E6;
-      /* === Тема 8 — Роза === */
-      --accent: #D6197A;
-      --accent-hover: #B0155F;
-      --accentA: #D6197A; --accentB: #F1479E;
-      --accent2: #7A1FD6;
-      --accent2-hover: #6317B0;
-      --accent2A: #7A1FD6; --accent2B: #9B4DF0;
-      --bg-secondary: #FDF0F7;
-      --grad-1: #FEF3FA; --grad-2: #FBD9EF; --grad-3: #F5B9E1;
-      --dark: #2B0A1E;
-    }
-    [data-theme="steel"] {
-      /* === Тема 9 — Коралл === */
-      --accent: #E4431B;
-      --accent-hover: #BE3614;
-      --accentA: #E4431B; --accentB: #FF6B3D;
-      --accent2: #15489E;
-      --accent2-hover: #0F3A82;
-      --accent2A: #15489E; --accent2B: #2E6BD1;
-      --bg-secondary: #FEF3F0;
-      --border: #F8D2CA;
-      --grad-1: #FEEFEA; --grad-2: #FCD4C6; --grad-3: #F8B49E;
-      --dark: #33130A;
+    [data-theme="terracotta"] {
+      --text-primary: #3A2013;
+      --text-muted: #8C6B54;
+      /* === Тема 7 — Terracotta: смелая, тёплый насыщенный янтарь/пряность === */
+      --accent: #A8461F;
+      --accent-hover: #7E3116;
+      --accentA: #C9622F; --accentB: #7E3116;
+      --accent2: #D4A857;
+      --accent2-hover: #A9823B;
+      --accent2A: #F0C888; --accent2B: #C6A15B;
+      --bg-secondary: #F2E4D3;
+      --border: #E3C9AC;
+      --grad-1: #FBF3E8; --grad-2: #F2DEC2; --grad-3: #E8C79A;
+      --dark: #3A2013;
     }
 
     /* Тема управляет не только акцентами: кнопки — с градиентом,
@@ -600,6 +584,33 @@
       font-weight: 500;
     }
 
+    /* === Верхнее меню: типографика вместо голого текста (люкс-паттерн — без иконок) === */
+    .aw-nav-link {
+      position: relative;
+      font-family: 'Space Grotesk', system-ui, sans-serif;
+      font-size: 12.5px;
+      font-weight: 500;
+      letter-spacing: 0.09em;
+      text-transform: uppercase;
+      padding-bottom: 5px;
+      transition: color .25s ease;
+    }
+    .aw-nav-link:hover { color: var(--accent); }
+    .aw-nav-link::after {
+      content: '';
+      position: absolute;
+      left: 0; right: 0; bottom: 0;
+      height: 1.5px;
+      background: var(--accent2, var(--accent));
+      transform: scaleX(0);
+      transform-origin: right;
+      transition: transform .35s cubic-bezier(.2,.7,.2,1);
+    }
+    .aw-nav-link:hover::after { transform: scaleX(1); transform-origin: left; }
+    @media (prefers-reduced-motion: reduce) {
+      .aw-nav-link, .aw-nav-link::after { transition: none; }
+    }
+
     /* === Светлые градиентные блоки: текст от темы (About/География).
            ВАЖНО: .text-white не переопределяем — иначе кнопки внутри
            секции получают тёмный текст на тёмном фоне. === */
@@ -622,19 +633,15 @@
     @media(min-width:768px){.brand-logo-tile{width:calc(25% - 11px);}}
     @media(min-width:1024px){.brand-logo-tile{width:calc(16.666% - 12px);}}
 
-    /* === Плитка партнёра: логотип + название === */
-    .partner-tile{flex:0 0 auto;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;text-align:center;
-      background:var(--bg-primary);border:1px solid var(--border);border-radius:16px;min-height:132px;padding:20px 26px;width:calc(50% - 7px);
-      transition:border-color .2s ease,box-shadow .25s ease,transform .2s ease;}
-    .partner-tile:hover{border-color:var(--accent);transform:translateY(-3px);box-shadow:0 14px 32px -12px rgba(16,40,60,.20);}
-    .partner-tile .partner-name{font-family:'Space Grotesk',system-ui,sans-serif;font-weight:500;font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:#516577;}
-    @media(min-width:640px){.partner-tile{width:calc(33.333% - 10px);}}
-    @media(min-width:1024px){.partner-tile{width:calc(25% - 11px);}}
+    /* === Партнёры: бегущая строка (компактнее плиток) === */
+    .partner-marquee-item{flex:0 0 auto;display:inline-flex;align-items:center;gap:12px;padding:0 34px;opacity:.8;transition:opacity .2s ease;}
+    .partner-marquee-item:hover{opacity:1;}
+    .partner-marquee-item img{display:block;height:30px;width:auto;max-width:110px;object-fit:contain;}
+    .partner-marquee-item .partner-name{font-family:'Space Grotesk',system-ui,sans-serif;font-weight:500;font-size:12px;letter-spacing:.07em;text-transform:uppercase;color:#516577;white-space:nowrap;}
+    .partner-marquee-divider{flex:0 0 auto;width:5px;height:5px;border-radius:50%;background:var(--border);}
 
     /* === Выделение строки в заголовке (маркер-подчёркивание коралловым) === */
     .hl-coral{position:relative;display:inline-block;color:var(--accent);font-style:italic;}
-    .hl-coral::after{content:'';position:absolute;left:0;right:0;bottom:0.04em;height:0.34em;z-index:-1;border-radius:3px;
-      background:linear-gradient(90deg,color-mix(in srgb,var(--accent2) 32%,transparent),color-mix(in srgb,var(--accent2) 16%,transparent));}
 
     /* === Корзина: значок в шапке === */
     .aw-cart-btn{position:relative;display:inline-flex;align-items:center;justify-content:center;width:38px;height:38px;border-radius:50%;
@@ -669,6 +676,51 @@
       -webkit-mask-image: linear-gradient(to right, transparent, black 6%, black 94%, transparent);
     }
 
+    /* === Плёночная текстура (grain) — убирает «плоский шаблон», даёт редакторскую глубину === */
+    .aw-grain { position: relative; }
+    .aw-grain::after {
+      content: '';
+      position: absolute; inset: 0;
+      background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22180%22%20height%3D%22180%22%3E%3Cfilter%20id%3D%22n%22%3E%3CfeTurbulence%20type%3D%22fractalNoise%22%20baseFrequency%3D%220.85%22%20numOctaves%3D%222%22%20stitchTiles%3D%22stitch%22%2F%3E%3CfeColorMatrix%20type%3D%22saturate%22%20values%3D%220%22%2F%3E%3C%2Ffilter%3E%3Crect%20width%3D%22100%25%22%20height%3D%22100%25%22%20filter%3D%22url%28%23n%29%22%2F%3E%3C%2Fsvg%3E");
+      background-size: 180px 180px;
+      opacity: .045;
+      mix-blend-mode: overlay;
+      pointer-events: none;
+      border-radius: inherit;
+      z-index: 4;
+    }
+    /* Мягкая виньетка по краям — только там, где есть фотография/фон под ней */
+    .aw-vignette { position: relative; }
+    .aw-vignette::before {
+      content: '';
+      position: absolute; inset: 0;
+      background: radial-gradient(ellipse at 50% 45%, transparent 45%, rgba(7,29,49,.32) 100%);
+      pointer-events: none;
+      border-radius: inherit;
+      z-index: 3;
+    }
+
+    /* === Магнитные кнопки (только «тонкий» указатель — десктоп) === */
+    .aw-magnetic { transition: transform .3s cubic-bezier(.2,.7,.2,1); }
+
+    /* === Spotlight: подсветка-блик, следующая за курсором (карточки брендов) === */
+    .aw-spotlight { position: relative; }
+    .aw-spotlight::before {
+      content: '';
+      position: absolute; inset: 0;
+      border-radius: inherit;
+      background: radial-gradient(220px circle at var(--x, 50%) var(--y, 50%), color-mix(in srgb, var(--accent2, var(--accent)) 18%, transparent), transparent 62%);
+      opacity: 0;
+      transition: opacity .35s ease;
+      pointer-events: none;
+      z-index: 1;
+    }
+    .aw-spotlight:hover::before { opacity: 1; }
+    @media (prefers-reduced-motion: reduce) {
+      .aw-magnetic { transition: none !important; }
+      .aw-spotlight::before { transition: none !important; }
+    }
+
     /* === Scroll arrow === */
     @keyframes scroll-arrow {
       0%, 100% { transform: translateY(0); opacity: 0.85; }
@@ -699,6 +751,25 @@
     .hero-orb-b { animation: hero-drift-b 30s ease-in-out infinite; }
     .hero-orb-c { animation: hero-drift-c 26s ease-in-out infinite; animation-delay: -8s; }
     .hero-orb-d { animation: hero-orb-extra 19s ease-in-out infinite; animation-delay: -5s; }
+
+    /* === Hero: фирменный водяной знак (ромб+волна из логотипа), асимметрично === */
+    .hero-watermark {
+      position: absolute;
+      top: 50%;
+      right: clamp(-160px, -9vw, -40px);
+      width: clamp(340px, 46vw, 620px);
+      height: auto;
+      aspect-ratio: 1 / 1;
+      transform: translateY(-50%);
+      fill: var(--dark);
+      stroke: var(--dark);
+      opacity: .055;
+      pointer-events: none;
+      z-index: 0;
+    }
+    @media (max-width: 768px) {
+      .hero-watermark { width: clamp(260px, 68vw, 420px); right: -90px; opacity: .05; }
+    }
 
     /* === Floating glass cards (subtle 3D feel) === */
     @keyframes glass-float-1 {
@@ -1203,6 +1274,55 @@
       border-radius: 1px;
     }
 
+    /* ── Sunrise: живая волна внутри ромба (заставка + хедер) ── */
+    @keyframes aw-logo-wave-near-mv {
+      0%, 100% { transform: translate(0, 0); }
+      50%      { transform: translate(-3.2px, 1.1px); }
+    }
+    @keyframes aw-logo-wave-far-mv {
+      0%, 100% { transform: translate(0, 0); }
+      50%      { transform: translate(2.6px, -0.6px); }
+    }
+    @keyframes aw-logo-sun-mv {
+      0%, 100% { transform: translateY(0); }
+      50%      { transform: translateY(-1.6px); }
+    }
+    .aw-logo-wave-near { animation: aw-logo-wave-near-mv 3.4s ease-in-out infinite; transform-box: fill-box; transform-origin: 50% 50%; }
+    .aw-logo-wave-far  { animation: aw-logo-wave-far-mv 4.4s ease-in-out infinite; transform-box: fill-box; transform-origin: 50% 50%; }
+    .aw-logo-sun       { animation: aw-logo-sun-mv 3s ease-in-out infinite; transform-box: fill-box; transform-origin: 50% 50%; }
+
+    /* ── Объём: ромб на заставке слегка «дышит» в 3D ── */
+    @keyframes aw-logo-tilt {
+      0%, 100% { transform: perspective(420px) rotateY(-8deg) rotateX(3deg); }
+      50%      { transform: perspective(420px) rotateY(8deg) rotateX(-3deg); }
+    }
+    .aw-logo-3d { animation: aw-logo-tilt 5.5s ease-in-out infinite; }
+
+    /* ── Блик, пробегающий по ромбу (только заставка) ── */
+    @keyframes aw-logo-shine-mv {
+      0%   { transform: translateX(-90px) skewX(-20deg); }
+      35%  { transform: translateX(170px) skewX(-20deg); }
+      100% { transform: translateX(170px) skewX(-20deg); }
+    }
+    .aw-logo-shine { animation: aw-logo-shine-mv 5s ease-in-out infinite; }
+
+    /* ── Логотип в хедере: лёгкое покачивание + акцент при наведении ── */
+    @keyframes aw-header-logo-idle {
+      0%, 100% { transform: rotate(-4deg); }
+      50%      { transform: rotate(4deg); }
+    }
+    #aw-header-logo {
+      animation: aw-header-logo-idle 6s ease-in-out infinite;
+      transform-origin: 50% 50%;
+      transition: transform .35s cubic-bezier(.2,.7,.2,1);
+    }
+    .group:hover #aw-header-logo { animation-play-state: paused; transform: rotate(10deg) scale(1.08); }
+
+    @media (prefers-reduced-motion: reduce) {
+      .aw-logo-wave-near, .aw-logo-wave-far, .aw-logo-sun,
+      .aw-logo-3d, .aw-logo-shine, #aw-header-logo { animation: none; }
+    }
+
     /* ═══════════════════════════════════════════════════
        ABOUT SECTION — Premium Animations
     ═══════════════════════════════════════════════════ */
@@ -1307,10 +1427,7 @@
        ОБЛОЖКА (100vh) И СТРАНИЦА-КНИГА
     ═══════════════════════════════════════════════════ */
     #aw-cover {
-      position: sticky;
-      top: var(--aw-header-h, 64px);
-      height: calc(100svh - var(--aw-header-h, 64px));
-      min-height: 520px;
+      position: relative;
       z-index: 1;
       overflow: hidden;
       display: flex;
@@ -1321,8 +1438,6 @@
       display: flex;
       flex-direction: column;
       min-height: 0;
-      transform-origin: 50% 18%;
-      will-change: transform, opacity;
     }
     #aw-book {
       position: relative;
@@ -1357,9 +1472,6 @@
     .aw-scroll-hint .eyebrow { writing-mode: vertical-rl; letter-spacing: .3em; font-size: .58rem; }
     .aw-scroll-hint svg { animation: scroll-arrow 2.2s ease-in-out infinite; }
     @media (max-width: 640px) { .aw-scroll-hint { display: none; } }
-    @media (prefers-reduced-motion: reduce) {
-      #aw-cover-inner { transform: none !important; opacity: 1 !important; }
-    }
 
     /* ═══════════════════════════════════════════════════
        ВОЗДУХ: вертикальный ритм главной страницы
@@ -1408,42 +1520,27 @@
 </head>
 
 <body class="bg-white text-stone-900">
-<div id="aw-loader" aria-hidden="true" role="presentation">
+<div id="aw-loader" class="aw-grain" aria-hidden="true" role="presentation">
   <div id="aw-loader-logo" style="position:relative;width:76px;height:76px;">
     <div id="aw-loader-ring"></div>
-    <svg viewBox="0 0 100 100" width="76" height="76" xmlns="http://www.w3.org/2000/svg" fill="none" aria-label="Asiatic Wave">
-      <defs>
-        <linearGradient id="awl-frame" x1="20%" y1="0%" x2="80%" y2="100%"><stop offset="0%" stop-color="#0564a8"/><stop offset="100%" stop-color="#00b2be"/></linearGradient>
-        <linearGradient id="awl-sky"   x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" stop-color="#E5F6FB"/><stop offset="100%" stop-color="#BCDFED"/></linearGradient>
-        <linearGradient id="awl-ocean" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" stop-color="#005E7A"/><stop offset="100%" stop-color="#011628"/></linearGradient>
-        <linearGradient id="awl-wave"  x1="20%" y1="5%" x2="75%" y2="95%"><stop offset="0%" stop-color="#9AF0F8"/><stop offset="22%" stop-color="#00b2be"/><stop offset="60%" stop-color="#0564a8"/><stop offset="100%" stop-color="#022b50"/></linearGradient>
-        <linearGradient id="awl-curl"  x1="0%" y1="0%" x2="30%" y2="100%"><stop offset="0%" stop-color="#CEFFFF"/><stop offset="100%" stop-color="#44D8E6"/></linearGradient>
-        <clipPath id="awl-clip"><polygon points="50,10 90,50 50,90 10,50"/></clipPath>
-      </defs>
-      <g clip-path="url(#awl-clip)">
-        <rect x="0" y="0" width="100" height="100" fill="url(#awl-sky)"/>
-        <rect x="0" y="50" width="100" height="50" fill="url(#awl-ocean)"/>
-        <path d="M 68,44 C 73,40 81,40 87,44 C 89,47 88,52 86,53 C 81,51 76,51 71,52 C 69,50 68,47 68,44 Z" fill="#008899" opacity="0.6"/>
-        <path d="M 65,37 C 57,26 49,23 43,27 C 35,31 27,40 21,52 C 17,59 17,65 21,68 C 29,73 45,73 59,68 C 71,64 80,57 84,47 C 87,41 84,37 78,35 C 73,33 69,34 65,37 Z" fill="url(#awl-wave)"/>
-        <path d="M 43,27 C 35,32 28,41 22,53 C 27,43 34,34 41,29 Z" fill="white" opacity="0.1"/>
-        <path d="M 43,27 C 41,19 45,11 54,10 C 62,9 70,13 73,21 C 75,26 75,33 73,37 C 71,37 68,35 66,32 C 62,28 56,25 50,24 C 46,24 44,25 43,27 Z" fill="url(#awl-curl)" opacity="0.92"/>
-        <path d="M 50,24 C 48,19 52,13 58,12 C 65,11 71,15 73,22 C 74,27 73,31 71,33 C 69,33 67,30 65,28 C 61,25 55,23 50,24 Z" fill="#003E52" opacity="0.65"/>
-        <ellipse cx="54" cy="13" rx="4"   ry="2.2" fill="white" opacity="0.85"/>
-        <ellipse cx="62" cy="11" rx="3"   ry="1.8" fill="white" opacity="0.80"/>
-        <ellipse cx="60" cy="17" rx="4.5" ry="2"   fill="white" opacity="0.72"/>
-        <ellipse cx="48" cy="20" rx="2.5" ry="1.8" fill="white" opacity="0.68"/>
-        <ellipse cx="68" cy="15" rx="2.5" ry="1.5" fill="white" opacity="0.65"/>
-        <ellipse cx="44" cy="25" rx="2"   ry="1.4" fill="white" opacity="0.55"/>
-        <ellipse cx="72" cy="20" rx="2" ry="1.3" fill="white" opacity="0.55"/>
-        <path d="M 50,32 C 47,39 44,48 42,59" stroke="white" stroke-width="0.7" stroke-linecap="round" fill="none" opacity="0.12"/>
-        <path d="M 40,88 Q 50,87 60,88" stroke="#4ABCD8" stroke-width="0.5" stroke-linecap="round" fill="none" opacity="0.28"/>
-        <path d="M 43,28 C 38,34 33,43 29,54" stroke="white" stroke-width="1.2" stroke-linecap="round" fill="none" opacity="0.22"/>
-        <path d="M 46,30 C 42,37 38,46 35,57" stroke="white" stroke-width="0.9" stroke-linecap="round" fill="none" opacity="0.15"/>
-        <path d="M 26,78 Q 40,76 52,78 Q 64,80 74,77" stroke="#4ABCD8" stroke-width="0.9" stroke-linecap="round" fill="none" opacity="0.5"/>
-        <path d="M 33,84 Q 45,83 56,84 Q 65,85 74,83" stroke="#4ABCD8" stroke-width="0.7" stroke-linecap="round" fill="none" opacity="0.35"/>
-      </g>
-      <polygon points="50,10 90,50 50,90 10,50" stroke="url(#awl-frame)" stroke-width="2.5" stroke-linejoin="miter" stroke-miterlimit="8" fill="none"/>
-    </svg>
+    <div class="aw-logo-3d" style="width:76px;height:76px;">
+      <svg viewBox="0 0 120 120" width="76" height="76" xmlns="http://www.w3.org/2000/svg" aria-label="Asiatic Wave">
+        <defs>
+          <linearGradient id="awl-t" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#11395B"/><stop offset="100%" stop-color="#071D31"/></linearGradient>
+          <linearGradient id="awl-s" x1="30%" y1="0%" x2="70%" y2="100%"><stop offset="0%" stop-color="#F6E0A3"/><stop offset="100%" stop-color="#C79A4C"/></linearGradient>
+          <linearGradient id="awl-w" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" stop-color="#F2D58C"/><stop offset="100%" stop-color="#B98F45"/></linearGradient>
+          <clipPath id="awl-clip"><polygon points="60,22 98,60 60,98 22,60"/></clipPath>
+        </defs>
+        <rect x="10" y="10" width="100" height="100" rx="24" fill="url(#awl-t)"/>
+        <g clip-path="url(#awl-clip)">
+          <circle class="aw-logo-sun" cx="66" cy="42" r="9" fill="url(#awl-s)"/>
+          <path class="aw-logo-wave-far" d="M20 66 C 32 63, 42 59, 52 56.5 C 62 54.5, 72 57.5, 80 63 C 84 65.8, 88 69, 92 73 L 98 80 L 98 100 L 20 100 Z" fill="#1D5680"/>
+          <path class="aw-logo-wave-near" d="M20 70 C 27 68.5, 33 66, 38.5 62 C 43.5 58.4, 46.5 53.5, 46 49.5 C 49 47.3, 52.2 48.4, 52.9 51.2 C 53.4 53.6, 51.7 55.4, 48.9 55.1 C 51.3 58.9, 56 62.5, 62 64.5 C 72 67.5, 82 66.5, 92 62 L 98 60 L 98 100 L 20 100 Z" fill="url(#awl-w)"/>
+          <rect class="aw-logo-shine" x="-40" y="0" width="22" height="140" fill="rgba(255,255,255,.32)"/>
+        </g>
+        <polygon points="60,22 98,60 60,98 22,60" stroke="#FBF8F2" stroke-width="3.2" stroke-linejoin="round" fill="none"/>
+      </svg>
+    </div>
   </div>
   <div id="aw-loader-name">
     <span class="aw-ll">A</span><span class="aw-ll">S</span><span class="aw-ll">I</span><span class="aw-ll">A</span><span class="aw-ll">T</span><span class="aw-ll">I</span><span class="aw-ll">C</span><span class="aw-ll-space"></span><span class="aw-ll">W</span><span class="aw-ll">A</span><span class="aw-ll">V</span><span class="aw-ll">E</span>
@@ -1462,44 +1559,29 @@
 <header x-data="{ mobileOpen: false }" class="sticky top-0 z-40 backdrop-blur-lg bg-white/75 border-b border-stone-200/70">
   <div class="max-w-7xl mx-auto px-5 md:px-8 lg:px-10 h-16 flex items-center justify-between">
     <a href="#top" class="flex items-center gap-2.5 group">
-      <svg viewBox="0 0 100 100" class="w-9 h-9" xmlns="http://www.w3.org/2000/svg" fill="none" aria-label="Asiatic Wave">
-      <defs>
-        <linearGradient id="awh-frame" x1="20%" y1="0%" x2="80%" y2="100%"><stop offset="0%" stop-color="#0564a8"/><stop offset="100%" stop-color="#00b2be"/></linearGradient>
-        <linearGradient id="awh-sky"   x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" stop-color="#E5F6FB"/><stop offset="100%" stop-color="#BCDFED"/></linearGradient>
-        <linearGradient id="awh-ocean" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" stop-color="#005E7A"/><stop offset="100%" stop-color="#011628"/></linearGradient>
-        <linearGradient id="awh-wave"  x1="20%" y1="5%" x2="75%" y2="95%"><stop offset="0%" stop-color="#9AF0F8"/><stop offset="22%" stop-color="#00b2be"/><stop offset="60%" stop-color="#0564a8"/><stop offset="100%" stop-color="#022b50"/></linearGradient>
-        <linearGradient id="awh-curl"  x1="0%" y1="0%" x2="30%" y2="100%"><stop offset="0%" stop-color="#CEFFFF"/><stop offset="100%" stop-color="#44D8E6"/></linearGradient>
-        <clipPath id="awh-clip"><polygon points="50,10 90,50 50,90 10,50"/></clipPath>
-      </defs>
-      <g clip-path="url(#awh-clip)">
-        <rect x="0" y="0" width="100" height="100" fill="url(#awh-sky)"/>
-        <rect x="0" y="50" width="100" height="50" fill="url(#awh-ocean)"/>
-        <path d="M 68,44 C 73,40 81,40 87,44 C 89,47 88,52 86,53 C 81,51 76,51 71,52 C 69,50 68,47 68,44 Z" fill="#008899" opacity="0.6"/>
-        <path d="M 65,37 C 57,26 49,23 43,27 C 35,31 27,40 21,52 C 17,59 17,65 21,68 C 29,73 45,73 59,68 C 71,64 80,57 84,47 C 87,41 84,37 78,35 C 73,33 69,34 65,37 Z" fill="url(#awh-wave)"/>
-        <path d="M 43,27 C 35,32 28,41 22,53 C 27,43 34,34 41,29 Z" fill="white" opacity="0.1"/>
-        <path d="M 43,27 C 41,19 45,11 54,10 C 62,9 70,13 73,21 C 75,26 75,33 73,37 C 71,37 68,35 66,32 C 62,28 56,25 50,24 C 46,24 44,25 43,27 Z" fill="url(#awh-curl)" opacity="0.92"/>
-        <path d="M 50,24 C 48,19 52,13 58,12 C 65,11 71,15 73,22 C 74,27 73,31 71,33 C 69,33 67,30 65,28 C 61,25 55,23 50,24 Z" fill="#003E52" opacity="0.65"/>
-        <ellipse cx="54" cy="13" rx="4"   ry="2.2" fill="white" opacity="0.85"/>
-        <ellipse cx="62" cy="11" rx="3"   ry="1.8" fill="white" opacity="0.80"/>
-        <ellipse cx="60" cy="17" rx="4.5" ry="2"   fill="white" opacity="0.72"/>
-        <ellipse cx="48" cy="20" rx="2.5" ry="1.8" fill="white" opacity="0.68"/>
-        <ellipse cx="68" cy="15" rx="2.5" ry="1.5" fill="white" opacity="0.65"/>
-        <ellipse cx="44" cy="25" rx="2"   ry="1.4" fill="white" opacity="0.55"/>
-        <path d="M 43,28 C 38,34 33,43 29,54" stroke="white" stroke-width="1.2" stroke-linecap="round" fill="none" opacity="0.22"/>
-        <path d="M 46,30 C 42,37 38,46 35,57" stroke="white" stroke-width="0.9" stroke-linecap="round" fill="none" opacity="0.15"/>
-        <path d="M 26,78 Q 40,76 52,78 Q 64,80 74,77" stroke="#4ABCD8" stroke-width="0.9" stroke-linecap="round" fill="none" opacity="0.5"/>
-        <path d="M 33,84 Q 45,83 56,84 Q 65,85 74,83" stroke="#4ABCD8" stroke-width="0.7" stroke-linecap="round" fill="none" opacity="0.35"/>
-      </g>
-      <polygon points="50,10 90,50 50,90 10,50" stroke="url(#awh-frame)" stroke-width="2.5" stroke-linejoin="miter" stroke-miterlimit="8" fill="none"/>
-    </svg>
+      <svg id="aw-header-logo" viewBox="0 0 120 120" class="w-9 h-9" xmlns="http://www.w3.org/2000/svg" aria-label="Asiatic Wave">
+        <defs>
+          <linearGradient id="awh-t" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#11395B"/><stop offset="100%" stop-color="#071D31"/></linearGradient>
+          <linearGradient id="awh-s" x1="30%" y1="0%" x2="70%" y2="100%"><stop offset="0%" stop-color="#F6E0A3"/><stop offset="100%" stop-color="#C79A4C"/></linearGradient>
+          <linearGradient id="awh-w" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" stop-color="#F2D58C"/><stop offset="100%" stop-color="#B98F45"/></linearGradient>
+          <clipPath id="awh-clip"><polygon points="60,22 98,60 60,98 22,60"/></clipPath>
+        </defs>
+        <rect x="10" y="10" width="100" height="100" rx="24" fill="url(#awh-t)"/>
+        <g clip-path="url(#awh-clip)">
+          <circle class="aw-logo-sun" cx="66" cy="42" r="9" fill="url(#awh-s)"/>
+          <path class="aw-logo-wave-far" d="M20 66 C 32 63, 42 59, 52 56.5 C 62 54.5, 72 57.5, 80 63 C 84 65.8, 88 69, 92 73 L 98 80 L 98 100 L 20 100 Z" fill="#1D5680"/>
+          <path class="aw-logo-wave-near" d="M20 70 C 27 68.5, 33 66, 38.5 62 C 43.5 58.4, 46.5 53.5, 46 49.5 C 49 47.3, 52.2 48.4, 52.9 51.2 C 53.4 53.6, 51.7 55.4, 48.9 55.1 C 51.3 58.9, 56 62.5, 62 64.5 C 72 67.5, 82 66.5, 92 62 L 98 60 L 98 100 L 20 100 Z" fill="url(#awh-w)"/>
+        </g>
+        <polygon points="60,22 98,60 60,98 22,60" stroke="#FBF8F2" stroke-width="3.2" stroke-linejoin="round" fill="none"/>
+      </svg>
       <span class="font-serif text-[15px] tracking-[0.22em] font-light hidden sm:inline">ASIATIC WAVE</span>
     </a>
 
-    <nav class="hidden md:flex items-center gap-7 text-sm text-stone-700">
-      <a href="#brands" data-i18n="nav.brands" class="hover:text-stone-900 transition">Бренды</a>
-      <a href="#about" data-i18n="nav.about" class="hover:text-stone-900 transition">О нас</a>
-      <a href="#partners" data-i18n="nav.partners" class="hover:text-stone-900 transition">Партнёры</a>
-      <a href="#contact" data-i18n="nav.contacts" class="hover:text-stone-900 transition">Контакты</a>
+    <nav class="hidden md:flex items-center gap-8 text-sm text-stone-700">
+      <a href="#brands" data-i18n="nav.brands" class="aw-nav-link">Бренды</a>
+      <a href="#about" data-i18n="nav.about" class="aw-nav-link">О нас</a>
+      <a href="#partners" data-i18n="nav.partners" class="aw-nav-link">Партнёры</a>
+      <a href="#contact" data-i18n="nav.contacts" class="aw-nav-link">Контакты</a>
     </nav>
 
     <div class="flex items-center gap-3">
@@ -1559,12 +1641,23 @@
   <div id="aw-cover-inner">
 
 <!-- ============================================ 1. HERO ============================================ -->
-<section class="relative overflow-hidden">
+<section class="relative overflow-hidden aw-grain">
   <!-- Drifting blur orbs (окраска от темы) -->
   <div class="hero-orb-a absolute -top-20 -left-32 w-[420px] h-[420px] rounded-full blur-3xl pointer-events-none" style="background:color-mix(in srgb, var(--accent) 13%, transparent);"></div>
   <div class="hero-orb-b absolute -bottom-32 -right-20 w-[520px] h-[520px] rounded-full blur-3xl pointer-events-none" style="background:color-mix(in srgb, var(--accentB, var(--accent)) 12%, transparent);"></div>
   <div class="hero-orb-c absolute top-1/3 left-1/2 w-[640px] h-[640px] rounded-full blur-3xl pointer-events-none" style="background:color-mix(in srgb, var(--accent) 8%, transparent);"></div>
   <div class="hero-orb-d absolute top-10 right-1/4 w-[300px] h-[300px] rounded-full blur-3xl pointer-events-none" style="background:color-mix(in srgb, var(--accent2) 11%, transparent);"></div>
+
+  <!-- Фирменный водяной знак: ромб+волна из логотипа, асимметрично, вместо ещё одного абстрактного пятна -->
+  <svg class="hero-watermark" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+    <defs><clipPath id="awhero-clip"><polygon points="60,22 98,60 60,98 22,60"/></clipPath></defs>
+    <g clip-path="url(#awhero-clip)">
+      <path class="aw-logo-wave-far" d="M20 66 C 32 63, 42 59, 52 56.5 C 62 54.5, 72 57.5, 80 63 C 84 65.8, 88 69, 92 73 L 98 80 L 98 100 L 20 100 Z"/>
+      <path class="aw-logo-wave-near" d="M20 70 C 27 68.5, 33 66, 38.5 62 C 43.5 58.4, 46.5 53.5, 46 49.5 C 49 47.3, 52.2 48.4, 52.9 51.2 C 53.4 53.6, 51.7 55.4, 48.9 55.1 C 51.3 58.9, 56 62.5, 62 64.5 C 72 67.5, 82 66.5, 92 62 L 98 60 L 98 100 L 20 100 Z"/>
+      <circle class="aw-logo-sun" cx="66" cy="42" r="9"/>
+    </g>
+    <polygon points="60,22 98,60 60,98 22,60" fill="none" stroke-width="2.4"/>
+  </svg>
 
   <div class="relative max-w-5xl mx-auto px-5 md:px-8 lg:px-10 pt-10 pb-10 md:pt-16 md:pb-14">
     <div class="flex flex-col items-center text-center">
@@ -1576,7 +1669,7 @@
       </h1>
 
       <div class="mt-7 flex flex-col sm:flex-row items-stretch sm:items-center gap-3">
-        <a href="#contact" data-cursor-text="Связаться" class="group inline-flex items-center justify-center gap-2 px-7 py-3.5 bg-coral text-white rounded-full hover:bg-coral-hover transition text-sm font-medium">
+        <a href="#contact" data-cursor-text="Связаться" class="aw-magnetic group inline-flex items-center justify-center gap-2 px-7 py-3.5 bg-coral text-white rounded-full hover:bg-coral-hover transition text-sm font-medium">
           <span data-i18n="hero.cta_primary">Стать партнёром</span>
           <svg class="transition group-hover:translate-x-0.5" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 8h10M9 4l4 4-4 4" stroke-linecap="round" stroke-linejoin="round"/></svg>
         </a>
@@ -1601,7 +1694,7 @@
   next() { this.go(this.cur + 1); },
   prev() { this.go(this.cur - 1); },
   reset() { clearInterval(this.t); this.t = setInterval(() => this.next(), 4500); }
-}" x-init="reset()" @mouseenter="clearInterval(t)" @mouseleave="reset()" class="relative overflow-hidden w-full select-none" style="flex:1 1 auto;min-height:240px;">
+}" x-init="reset()" @mouseenter="clearInterval(t)" @mouseleave="reset()" class="relative overflow-hidden w-full select-none h-[320px] sm:h-[440px] md:h-[560px] lg:h-[640px] aw-grain aw-vignette">
 
   <template x-for="(s, i) in slides" :key="i">
     <div class="absolute inset-0 transition-opacity duration-700 pointer-events-none"
@@ -1728,24 +1821,23 @@
 
     <!-- Статичная сетка логотипов: все бренды видны сразу, без карусели -->
     <div class="mt-12 md:mt-16 flex flex-wrap justify-center gap-[14px] reveal-stagger">
-        <a href="#brand/and-honey"      onclick="awSetPage('brand','and-honey')"      class="brand-logo-tile !p-2 overflow-hidden"><img src="brand-honey.png"        alt="&honey"            class="block h-20 max-w-full object-contain" loading="lazy"></a>
-        <a href="#brand/deve"           onclick="awSetPage('brand','deve')"           class="brand-logo-tile !p-2 overflow-hidden"><img src="brand-deve.png"         alt="Deve"              class="block h-20 max-w-full object-contain" loading="lazy"></a>
-        <a href="#brand/geniym"         onclick="awSetPage('brand','geniym')"         class="brand-logo-tile !p-2 overflow-hidden"><img src="brand-genyum.png"       alt="Genyum"            class="block h-20 max-w-full object-contain" loading="lazy"></a>
-        <a href="#brand/senka"          onclick="awSetPage('brand','senka')"          class="brand-logo-tile !p-2 overflow-hidden"><img src="brand-senka.png"        alt="Senka"             class="block h-20 max-w-full object-contain" loading="lazy"></a>
-        <a href="#brand/japan-algae"    onclick="awSetPage('brand','japan-algae')"    class="brand-logo-tile !p-2 overflow-hidden"><img src="brand-algae.png"        alt="Japan Algae"       class="block h-20 max-w-full object-contain" loading="lazy"></a>
-        <a href="#brand/coxir"          onclick="awSetPage('brand','coxir')"          class="brand-logo-tile !p-2 overflow-hidden"><img src="brand-coxir.png"        alt="Coxir"             class="block h-20 max-w-full object-contain" loading="lazy"></a>
-        <a href="#brand/reihaku-hatomugi" onclick="awSetPage('brand','reihaku-hatomugi')" class="brand-logo-tile !p-2 overflow-hidden"><img src="brand-hatomugi.png" alt="Reihaku Hatomugi" class="block h-20 max-w-full object-contain" loading="lazy"></a>
-        <a href="#brand/hempz"          onclick="awSetPage('brand','hempz')"          class="brand-logo-tile !p-2 overflow-hidden"><img src="brand-hempz.png"        alt="Hempz"             class="block h-20 max-w-full object-contain" loading="lazy"></a>
-        <a href="#brand/hormone-paris"  onclick="awSetPage('brand','hormone-paris')"  class="brand-logo-tile !p-2 overflow-hidden"><img src="brand-hormone.png"      alt="Hormone Paris"     class="block h-20 max-w-full object-contain" loading="lazy"></a>
-        <a href="#brand/japan-gals"     onclick="awSetPage('brand','japan-gals')"     class="brand-logo-tile !p-2 overflow-hidden"><img src="brand-japangals.png"    alt="Japan Gals"        class="block h-20 max-w-full object-contain" loading="lazy"></a>
-        <a href="#brand/kobayashi"      onclick="awSetPage('brand','kobayashi')"      class="brand-logo-tile !p-2 overflow-hidden"><img src="brand-kobayashi.png"    alt="Kobayashi"         class="block h-20 max-w-full object-contain" loading="lazy"></a>
-        <a href="#brand/orihiro"        onclick="awSetPage('brand','orihiro')"        class="brand-logo-tile !p-2 overflow-hidden"><img src="brand-orihiro.png"      alt="Orihiro"           class="block h-20 max-w-full object-contain" loading="lazy"></a>
-        <a href="#brand/pharmaact"      onclick="awSetPage('brand','pharmaact')"      class="brand-logo-tile !p-2 overflow-hidden"><img src="brand-pharmaact.png"    alt="Pharmaact"         class="block h-20 max-w-full object-contain" loading="lazy"></a>
-        <a href="#brand/salon-link"     onclick="awSetPage('brand','salon-link')"     class="brand-logo-tile !p-2 overflow-hidden"><img src="brand-salonlink.png"    alt="Salon Link"        class="block h-20 max-w-full object-contain" loading="lazy"></a>
-        <a href="#brand/skin-life"      onclick="awSetPage('brand','skin-life')"      class="brand-logo-tile !p-2 overflow-hidden"><img src="brand-skinlite.png"     alt="Skin Lite"         class="block h-20 max-w-full object-contain" loading="lazy"></a>
-        <a href="#brand/the-skin-house" onclick="awSetPage('brand','the-skin-house')" class="brand-logo-tile !p-2 overflow-hidden"><img src="brand-theskinhouse.png" alt="The Skin House"    class="block h-20 max-w-full object-contain" loading="lazy"></a>
-        <a href="#brand/unimat-riken"   onclick="awSetPage('brand','unimat-riken')"   class="brand-logo-tile !p-2 overflow-hidden"><img src="brand-unimatriken.png"  alt="Unimat Riken"      class="block h-20 max-w-full object-contain" loading="lazy"></a>
-        <a href="#brand/wakodo"         onclick="awSetPage('brand','wakodo')"         class="brand-logo-tile !p-2 overflow-hidden"><img src="brand-wakado.png"       alt="Wakodo"            class="block h-20 max-w-full object-contain" loading="lazy"></a>
+        <a href="#brand/and-honey"      onclick="awSetPage('brand','and-honey')"      class="brand-logo-tile aw-spotlight !p-2 overflow-hidden"><img src="brand-honey.png"        alt="&honey"            class="block h-20 max-w-full object-contain" loading="lazy"></a>
+        <a href="#brand/deve"           onclick="awSetPage('brand','deve')"           class="brand-logo-tile aw-spotlight !p-2 overflow-hidden"><img src="brand-deve.png"         alt="Deve"              class="block h-20 max-w-full object-contain" loading="lazy"></a>
+        <a href="#brand/geniym"         onclick="awSetPage('brand','geniym')"         class="brand-logo-tile aw-spotlight !p-2 overflow-hidden"><img src="brand-genyum.png"       alt="Genyum"            class="block h-20 max-w-full object-contain" loading="lazy"></a>
+        <a href="#brand/senka"          onclick="awSetPage('brand','senka')"          class="brand-logo-tile aw-spotlight !p-2 overflow-hidden"><img src="brand-senka.png"        alt="Senka"             class="block h-20 max-w-full object-contain" loading="lazy"></a>
+        <a href="#brand/japan-algae"    onclick="awSetPage('brand','japan-algae')"    class="brand-logo-tile aw-spotlight !p-2 overflow-hidden"><img src="brand-algae.png"        alt="Japan Algae"       class="block h-20 max-w-full object-contain" loading="lazy"></a>
+        <a href="#brand/coxir"          onclick="awSetPage('brand','coxir')"          class="brand-logo-tile aw-spotlight !p-2 overflow-hidden"><img src="brand-coxir.png"        alt="Coxir"             class="block h-20 max-w-full object-contain" loading="lazy"></a>
+        <a href="#brand/reihaku-hatomugi" onclick="awSetPage('brand','reihaku-hatomugi')" class="brand-logo-tile aw-spotlight !p-2 overflow-hidden"><img src="brand-hatomugi.png" alt="Reihaku Hatomugi" class="block h-20 max-w-full object-contain" loading="lazy"></a>
+        <a href="#brand/hempz"          onclick="awSetPage('brand','hempz')"          class="brand-logo-tile aw-spotlight !p-2 overflow-hidden"><img src="brand-hempz.png"        alt="Hempz"             class="block h-20 max-w-full object-contain" loading="lazy"></a>
+        <a href="#brand/japan-gals"     onclick="awSetPage('brand','japan-gals')"     class="brand-logo-tile aw-spotlight !p-2 overflow-hidden"><img src="brand-japangals.png"    alt="Japan Gals"        class="block h-20 max-w-full object-contain" loading="lazy"></a>
+        <a href="#brand/kobayashi"      onclick="awSetPage('brand','kobayashi')"      class="brand-logo-tile aw-spotlight !p-2 overflow-hidden"><img src="brand-kobayashi.png"    alt="Kobayashi"         class="block h-20 max-w-full object-contain" loading="lazy"></a>
+        <a href="#brand/orihiro"        onclick="awSetPage('brand','orihiro')"        class="brand-logo-tile aw-spotlight !p-2 overflow-hidden"><img src="brand-orihiro.png"      alt="Orihiro"           class="block h-20 max-w-full object-contain" loading="lazy"></a>
+        <a href="#brand/pharmaact"      onclick="awSetPage('brand','pharmaact')"      class="brand-logo-tile aw-spotlight !p-2 overflow-hidden"><img src="brand-pharmaact.png"    alt="Pharmaact"         class="block h-20 max-w-full object-contain" loading="lazy"></a>
+        <a href="#brand/salon-link"     onclick="awSetPage('brand','salon-link')"     class="brand-logo-tile aw-spotlight !p-2 overflow-hidden"><img src="brand-salonlink.png"    alt="Salon Link"        class="block h-20 max-w-full object-contain" loading="lazy"></a>
+        <a href="#brand/skin-life"      onclick="awSetPage('brand','skin-life')"      class="brand-logo-tile aw-spotlight !p-2 overflow-hidden"><img src="brand-skinlite.png"     alt="Skin Lite"         class="block h-20 max-w-full object-contain" loading="lazy"></a>
+        <a href="#brand/the-skin-house" onclick="awSetPage('brand','the-skin-house')" class="brand-logo-tile aw-spotlight !p-2 overflow-hidden"><img src="brand-theskinhouse.png" alt="The Skin House"    class="block h-20 max-w-full object-contain" loading="lazy"></a>
+        <a href="#brand/unimat-riken"   onclick="awSetPage('brand','unimat-riken')"   class="brand-logo-tile aw-spotlight !p-2 overflow-hidden"><img src="brand-unimatriken.png"  alt="Unimat Riken"      class="block h-20 max-w-full object-contain" loading="lazy"></a>
+        <a href="#brand/wakodo"         onclick="awSetPage('brand','wakodo')"         class="brand-logo-tile aw-spotlight !p-2 overflow-hidden"><img src="brand-wakado.png"       alt="Wakodo"            class="block h-20 max-w-full object-contain" loading="lazy"></a>
     </div>
 
     <div class="mt-12 text-center reveal">
@@ -1766,31 +1858,34 @@
       <span class="eyebrow text-accent" data-i18n="ourpartners.eyebrow">Партнёры</span>
       <h2 data-i18n="ourpartners.title" class="mt-3 font-serif font-light text-3xl md:text-5xl leading-tight">С кем мы работаем</h2>
     </div>
-    <!-- Логотипы партнёров + названия, без описаний -->
-    <div class="mt-12 flex flex-wrap justify-center gap-[14px] reveal-stagger">
-        <a href="https://monamie.kz" target="_blank" rel="noopener" class="partner-tile">
-          <img src="partner-monami.png" alt="MonAmie" class="block h-14 max-w-full object-contain" loading="lazy">
-          <span class="partner-name">MonAmie</span>
-        </a>
-        <a href="https://goldapple.ru" target="_blank" rel="noopener" class="partner-tile">
-          <img src="partner-goldapple.png" alt="Gold Apple" class="block h-14 max-w-full object-contain" loading="lazy">
-          <span class="partner-name">Gold Apple</span>
-        </a>
-        <a href="https://beautymania.kz" target="_blank" rel="noopener" class="partner-tile">
-          <img src="partner-beautymania.png" alt="Beautymania" class="block h-14 max-w-full object-contain" loading="lazy">
-          <span class="partner-name">Beautymania</span>
-        </a>
-        <a href="https://japanstore.kz" target="_blank" rel="noopener" class="partner-tile">
-          <img src="partner-japanstore.png" alt="Japan Store" class="block h-14 max-w-full object-contain" loading="lazy">
-          <span class="partner-name">Japan Store</span>
-        </a>
-        <a href="https://french-house.kz/" target="_blank" rel="noopener" class="partner-tile">
-          <img src="data:image/jpeg;base64,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" alt="Французский Дом" class="block h-14 max-w-full object-contain rounded-full" loading="lazy">
-          <span class="partner-name">Французский Дом</span>
-        </a>
+    <!-- Логотипы партнёров — бегущая строка (компактнее прежней сетки) -->
+    <div class="mt-10 marquee-mask">
+      <div class="flex items-center marquee-track-left" style="width:max-content;animation-duration:32s;">
+        <div class="partner-marquee-item"><img src="partner-monami.png" alt="MonAmie" loading="lazy"><span class="partner-name">MonAmie</span></div>
+        <span class="partner-marquee-divider"></span>
+        <div class="partner-marquee-item"><img src="partner-goldapple.png" alt="Gold Apple" loading="lazy"><span class="partner-name">Gold Apple</span></div>
+        <span class="partner-marquee-divider"></span>
+        <div class="partner-marquee-item"><img src="partner-beautymania.png" alt="Beautymania" loading="lazy"><span class="partner-name">Beautymania</span></div>
+        <span class="partner-marquee-divider"></span>
+        <div class="partner-marquee-item"><img src="partner-japanstore.png" alt="Japan Store" loading="lazy"><span class="partner-name">Japan Store</span></div>
+        <span class="partner-marquee-divider"></span>
+        <div class="partner-marquee-item"><img src="partner-frenchhouse.jpeg" alt="Французский Дом" style="border-radius:50%" loading="lazy"><span class="partner-name">Французский Дом</span></div>
+        <span class="partner-marquee-divider"></span>
+        <!-- дубль набора — для бесшовной прокрутки -->
+        <div class="partner-marquee-item" aria-hidden="true"><img src="partner-monami.png" alt="" loading="lazy"><span class="partner-name">MonAmie</span></div>
+        <span class="partner-marquee-divider"></span>
+        <div class="partner-marquee-item" aria-hidden="true"><img src="partner-goldapple.png" alt="" loading="lazy"><span class="partner-name">Gold Apple</span></div>
+        <span class="partner-marquee-divider"></span>
+        <div class="partner-marquee-item" aria-hidden="true"><img src="partner-beautymania.png" alt="" loading="lazy"><span class="partner-name">Beautymania</span></div>
+        <span class="partner-marquee-divider"></span>
+        <div class="partner-marquee-item" aria-hidden="true"><img src="partner-japanstore.png" alt="" loading="lazy"><span class="partner-name">Japan Store</span></div>
+        <span class="partner-marquee-divider"></span>
+        <div class="partner-marquee-item" aria-hidden="true"><img src="partner-frenchhouse.jpeg" alt="" style="border-radius:50%" loading="lazy"><span class="partner-name">Французский Дом</span></div>
+        <span class="partner-marquee-divider"></span>
+      </div>
     </div>
     <div class="mt-12 text-center reveal">
-      <a href="#contact" class="group inline-flex items-center gap-2 px-8 py-4 bg-coral text-white rounded-full hover:bg-coral-hover transition text-sm font-medium">
+      <a href="#contact" class="aw-magnetic group inline-flex items-center gap-2 px-8 py-4 bg-coral text-white rounded-full hover:bg-coral-hover transition text-sm font-medium">
         <span data-i18n="ourpartners.cta">Стать партнёром</span>
         <svg class="transition group-hover:translate-x-0.5" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 8h10M9 4l4 4-4 4" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </a>
@@ -1832,7 +1927,7 @@
 </section>
 
 <!-- ============================================ 8. FINAL CTA ============================================ -->
-<section id="contact" class="relative overflow-hidden bg-cream">
+<section id="contact" class="relative overflow-hidden bg-cream aw-grain">
   <div class="absolute inset-0 overflow-hidden pointer-events-none">
     <div class="cta-orb-1 absolute -top-40 -right-40 w-[640px] h-[640px] rounded-full" style="background:radial-gradient(circle,color-mix(in srgb, var(--accent) 5%, transparent),transparent 65%);"></div>
     <div class="cta-orb-2 absolute -bottom-20 left-0 w-[500px] h-[500px] rounded-full" style="background:radial-gradient(circle,color-mix(in srgb, var(--accentB, var(--accent)) 4%, transparent),transparent 65%);"></div>
@@ -1852,14 +1947,14 @@
           <input name="contact" required placeholder="Телефон или e-mail" data-i18n-ph="form.contact" class="aw-input">
         </div>
         <textarea name="message" rows="3" placeholder="Сообщение" data-i18n-ph="form.message" class="aw-input mt-3 resize-none"></textarea>
-        <button type="submit" class="mt-4 w-full inline-flex items-center justify-center gap-2 px-8 py-3.5 bg-coral text-white rounded-full hover:bg-coral-hover transition text-sm font-medium">
+        <button type="submit" class="aw-magnetic mt-4 w-full inline-flex items-center justify-center gap-2 px-8 py-3.5 bg-coral text-white rounded-full hover:bg-coral-hover transition text-sm font-medium">
           <span data-i18n="form.submit">Отправить заявку</span>
           <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 8h10M9 4l4 4-4 4" stroke-linecap="round" stroke-linejoin="round"/></svg>
         </button>
         <p id="aw-form-ok" class="mt-3 text-sm font-medium hidden" style="color:#16a34a;" data-i18n="form.success">Спасибо! Мы свяжемся с вами в ближайшее время.</p>
       </form>
       <div class="mt-9 flex flex-wrap justify-center gap-3">
-        <a href="https://wa.me/77017088608" target="_blank" rel="noopener" class="inline-flex items-center gap-2 px-5 py-3 rounded-full border border-stone-200 bg-white text-sm font-medium text-stone-800 hover:border-stone-400 hover:shadow-sm transition"><svg width="18" height="18" viewBox="0 0 24 24" fill="#25D366" class="shrink-0"><path d="M17.4 14.4c-.3-.1-1.7-.8-1.9-.9-.3-.1-.4-.1-.6.1-.2.3-.7.9-.8 1-.1.2-.3.2-.5.1-.3-.1-1.2-.5-2.3-1.4-.8-.7-1.4-1.6-1.6-1.9-.1-.3 0-.4.1-.5.1-.1.3-.3.4-.5.1-.2.2-.3.3-.5.1-.2.1-.3 0-.5l-.7-1.6c-.2-.4-.4-.4-.6-.4h-.4c-.2 0-.5.1-.7.3-.2.3-.9.9-.9 2.2 0 1.3.9 2.5 1.1 2.7.1.2 1.8 2.8 4.4 3.9 1.6.7 2.2.7 3 .6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.6-.3zm-5.4 7.2c-1.7 0-3.4-.5-4.9-1.3l-3.5.9.9-3.4c-.9-1.5-1.4-3.3-1.4-5.1 0-5.5 4.4-9.9 9.9-9.9s9.9 4.4 9.9 9.9-4.5 9.9-10 9.9zm0-21.6c-6.5 0-11.7 5.3-11.7 11.7 0 2 .5 4 1.5 5.7L0 24l6.4-1.6c1.7 1 3.7 1.5 5.6 1.5 6.5 0 11.7-5.3 11.7-11.7S18.5 0 12 0z"/></svg> WhatsApp</a>
+        <a href="https://wa.me/+77078048960" target="_blank" rel="noopener" class="inline-flex items-center gap-2 px-5 py-3 rounded-full border border-stone-200 bg-white text-sm font-medium text-stone-800 hover:border-stone-400 hover:shadow-sm transition"><svg width="18" height="18" viewBox="0 0 24 24" fill="#25D366" class="shrink-0"><path d="M17.4 14.4c-.3-.1-1.7-.8-1.9-.9-.3-.1-.4-.1-.6.1-.2.3-.7.9-.8 1-.1.2-.3.2-.5.1-.3-.1-1.2-.5-2.3-1.4-.8-.7-1.4-1.6-1.6-1.9-.1-.3 0-.4.1-.5.1-.1.3-.3.4-.5.1-.2.2-.3.3-.5.1-.2.1-.3 0-.5l-.7-1.6c-.2-.4-.4-.4-.6-.4h-.4c-.2 0-.5.1-.7.3-.2.3-.9.9-.9 2.2 0 1.3.9 2.5 1.1 2.7.1.2 1.8 2.8 4.4 3.9 1.6.7 2.2.7 3 .6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.6-.3zm-5.4 7.2c-1.7 0-3.4-.5-4.9-1.3l-3.5.9.9-3.4c-.9-1.5-1.4-3.3-1.4-5.1 0-5.5 4.4-9.9 9.9-9.9s9.9 4.4 9.9 9.9-4.5 9.9-10 9.9zm0-21.6c-6.5 0-11.7 5.3-11.7 11.7 0 2 .5 4 1.5 5.7L0 24l6.4-1.6c1.7 1 3.7 1.5 5.6 1.5 6.5 0 11.7-5.3 11.7-11.7S18.5 0 12 0z"/></svg> WhatsApp</a>
         <a href="mailto:info@asiaticwave.com" class="inline-flex items-center gap-2 px-5 py-3 rounded-full border border-stone-200 bg-white text-sm font-medium text-stone-800 hover:border-stone-400 hover:shadow-sm transition"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#78716C" stroke-width="1.8" class="shrink-0"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg> info@asiaticwave.com</a>
       </div>
     </div>
@@ -1884,7 +1979,7 @@
           <h2 class="font-display text-xs tracking-[0.18em] uppercase text-stone-400 mb-6" x-text="awTxt(g,'label',$store.lang.current)"></h2>
           <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
             <template x-for="b in (window.AW_BRANDS||[]).filter(x=>x.group===g.key)" :key="b.slug">
-              <div class="group rounded-2xl border border-stone-200 bg-white overflow-hidden flex flex-col hover:shadow-xl hover:-translate-y-0.5 transition">
+              <div class="group aw-spotlight rounded-2xl border border-stone-200 bg-white overflow-hidden flex flex-col hover:shadow-xl hover:-translate-y-0.5 transition">
                 <div class="aspect-[16/9] flex items-center justify-center px-4 text-center" style="background:var(--bg-secondary);">
                   <span class="font-serif text-2xl text-stone-700 leading-tight" x-text="b.name"></span>
                 </div>
@@ -2124,36 +2219,21 @@
     <div class="grid grid-cols-2 md:grid-cols-12 gap-10">
       <div class="col-span-2 md:col-span-4">
         <a href="#top" class="flex items-center gap-2.5 text-stone-900">
-          <svg viewBox="0 0 100 100" class="w-10 h-10" xmlns="http://www.w3.org/2000/svg" fill="none" aria-label="Asiatic Wave">
-      <defs>
-        <linearGradient id="awf-frame" x1="20%" y1="0%" x2="80%" y2="100%"><stop offset="0%" stop-color="#0564a8"/><stop offset="100%" stop-color="#00b2be"/></linearGradient>
-        <linearGradient id="awf-sky"   x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" stop-color="#E5F6FB"/><stop offset="100%" stop-color="#BCDFED"/></linearGradient>
-        <linearGradient id="awf-ocean" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" stop-color="#005E7A"/><stop offset="100%" stop-color="#011628"/></linearGradient>
-        <linearGradient id="awf-wave"  x1="20%" y1="5%" x2="75%" y2="95%"><stop offset="0%" stop-color="#9AF0F8"/><stop offset="22%" stop-color="#00b2be"/><stop offset="60%" stop-color="#0564a8"/><stop offset="100%" stop-color="#022b50"/></linearGradient>
-        <linearGradient id="awf-curl"  x1="0%" y1="0%" x2="30%" y2="100%"><stop offset="0%" stop-color="#CEFFFF"/><stop offset="100%" stop-color="#44D8E6"/></linearGradient>
-        <clipPath id="awf-clip"><polygon points="50,10 90,50 50,90 10,50"/></clipPath>
-      </defs>
-      <g clip-path="url(#awf-clip)">
-        <rect x="0" y="0" width="100" height="100" fill="url(#awf-sky)"/>
-        <rect x="0" y="50" width="100" height="50" fill="url(#awf-ocean)"/>
-        <path d="M 68,44 C 73,40 81,40 87,44 C 89,47 88,52 86,53 C 81,51 76,51 71,52 C 69,50 68,47 68,44 Z" fill="#008899" opacity="0.6"/>
-        <path d="M 65,37 C 57,26 49,23 43,27 C 35,31 27,40 21,52 C 17,59 17,65 21,68 C 29,73 45,73 59,68 C 71,64 80,57 84,47 C 87,41 84,37 78,35 C 73,33 69,34 65,37 Z" fill="url(#awf-wave)"/>
-        <path d="M 43,27 C 35,32 28,41 22,53 C 27,43 34,34 41,29 Z" fill="white" opacity="0.1"/>
-        <path d="M 43,27 C 41,19 45,11 54,10 C 62,9 70,13 73,21 C 75,26 75,33 73,37 C 71,37 68,35 66,32 C 62,28 56,25 50,24 C 46,24 44,25 43,27 Z" fill="url(#awf-curl)" opacity="0.92"/>
-        <path d="M 50,24 C 48,19 52,13 58,12 C 65,11 71,15 73,22 C 74,27 73,31 71,33 C 69,33 67,30 65,28 C 61,25 55,23 50,24 Z" fill="#003E52" opacity="0.65"/>
-        <ellipse cx="54" cy="13" rx="4"   ry="2.2" fill="white" opacity="0.85"/>
-        <ellipse cx="62" cy="11" rx="3"   ry="1.8" fill="white" opacity="0.80"/>
-        <ellipse cx="60" cy="17" rx="4.5" ry="2"   fill="white" opacity="0.72"/>
-        <ellipse cx="48" cy="20" rx="2.5" ry="1.8" fill="white" opacity="0.68"/>
-        <ellipse cx="68" cy="15" rx="2.5" ry="1.5" fill="white" opacity="0.65"/>
-        <ellipse cx="44" cy="25" rx="2"   ry="1.4" fill="white" opacity="0.55"/>
-        <path d="M 43,28 C 38,34 33,43 29,54" stroke="white" stroke-width="1.2" stroke-linecap="round" fill="none" opacity="0.22"/>
-        <path d="M 46,30 C 42,37 38,46 35,57" stroke="white" stroke-width="0.9" stroke-linecap="round" fill="none" opacity="0.15"/>
-        <path d="M 26,78 Q 40,76 52,78 Q 64,80 74,77" stroke="#4ABCD8" stroke-width="0.9" stroke-linecap="round" fill="none" opacity="0.5"/>
-        <path d="M 33,84 Q 45,83 56,84 Q 65,85 74,83" stroke="#4ABCD8" stroke-width="0.7" stroke-linecap="round" fill="none" opacity="0.35"/>
-      </g>
-      <polygon points="50,10 90,50 50,90 10,50" stroke="url(#awf-frame)" stroke-width="2.5" stroke-linejoin="miter" stroke-miterlimit="8" fill="none"/>
-    </svg>
+          <svg viewBox="0 0 120 120" class="w-10 h-10" xmlns="http://www.w3.org/2000/svg" aria-label="Asiatic Wave">
+            <defs>
+              <linearGradient id="awf-t" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#11395B"/><stop offset="100%" stop-color="#071D31"/></linearGradient>
+              <linearGradient id="awf-s" x1="30%" y1="0%" x2="70%" y2="100%"><stop offset="0%" stop-color="#F6E0A3"/><stop offset="100%" stop-color="#C79A4C"/></linearGradient>
+              <linearGradient id="awf-w" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" stop-color="#F2D58C"/><stop offset="100%" stop-color="#B98F45"/></linearGradient>
+              <clipPath id="awf-clip"><polygon points="60,22 98,60 60,98 22,60"/></clipPath>
+            </defs>
+            <rect x="10" y="10" width="100" height="100" rx="24" fill="url(#awf-t)"/>
+            <g clip-path="url(#awf-clip)">
+              <circle cx="66" cy="42" r="9" fill="url(#awf-s)"/>
+              <path d="M20 66 C 32 63, 42 59, 52 56.5 C 62 54.5, 72 57.5, 80 63 C 84 65.8, 88 69, 92 73 L 98 80 L 98 100 L 20 100 Z" fill="#1D5680"/>
+              <path d="M20 70 C 27 68.5, 33 66, 38.5 62 C 43.5 58.4, 46.5 53.5, 46 49.5 C 49 47.3, 52.2 48.4, 52.9 51.2 C 53.4 53.6, 51.7 55.4, 48.9 55.1 C 51.3 58.9, 56 62.5, 62 64.5 C 72 67.5, 82 66.5, 92 62 L 98 60 L 98 100 L 20 100 Z" fill="url(#awf-w)"/>
+            </g>
+            <polygon points="60,22 98,60 60,98 22,60" stroke="#FBF8F2" stroke-width="3.2" stroke-linejoin="round" fill="none"/>
+          </svg>
           <span class="font-serif text-lg tracking-[0.22em] font-light">ASIATIC WAVE</span>
         </a>
         <!-- Описание под логотипом убрано по правкам заказчика -->
@@ -2185,7 +2265,7 @@
           <li><a href="https://asiaticwave.com" target="_blank" rel="noopener" class="text-stone-700 hover:text-stone-900 transition">asiaticwave.com</a></li>
           <li><a href="mailto:info@asiaticwave.com" class="text-stone-700 hover:text-stone-900 transition break-all">info@asiaticwave.com</a></li>
           <li class="flex gap-3 mt-3">
-            <a href="https://wa.me/77017088608" target="_blank" rel="noopener" aria-label="WhatsApp" class="w-9 h-9 rounded-full border border-stone-300 text-stone-600 flex items-center justify-center hover:border-stone-500 hover:text-stone-900 hover:bg-white transition">
+            <a href="https://wa.me/+77078048960" target="_blank" rel="noopener" aria-label="WhatsApp" class="w-9 h-9 rounded-full border border-stone-300 text-stone-600 flex items-center justify-center hover:border-stone-500 hover:text-stone-900 hover:bg-white transition">
               <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M17.4 14.4c-.3-.1-1.7-.8-1.9-.9-.3-.1-.4-.1-.6.1-.2.3-.7.9-.8 1-.1.2-.3.2-.5.1-.3-.1-1.2-.5-2.3-1.4-.8-.7-1.4-1.6-1.6-1.9-.1-.3 0-.4.1-.5.1-.1.3-.3.4-.5.1-.2.2-.3.3-.5.1-.2.1-.3 0-.5l-.7-1.6c-.2-.4-.4-.4-.6-.4h-.4c-.2 0-.5.1-.7.3-.2.3-.9.9-.9 2.2 0 1.3.9 2.5 1.1 2.7.1.2 1.8 2.8 4.4 3.9 1.6.7 2.2.7 3 .6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.6-.3zm-5.4 7.2c-1.7 0-3.4-.5-4.9-1.3l-3.5.9.9-3.4c-.9-1.5-1.4-3.3-1.4-5.1 0-5.5 4.4-9.9 9.9-9.9s9.9 4.4 9.9 9.9-4.5 9.9-10 9.9zm0-21.6c-6.5 0-11.7 5.3-11.7 11.7 0 2 .5 4 1.5 5.7L0 24l6.4-1.6c1.7 1 3.7 1.5 5.6 1.5 6.5 0 11.7-5.3 11.7-11.7S18.5 0 12 0z"/></svg>
             </a>
           </li>
@@ -2230,7 +2310,6 @@
   };
   window.AW_BRANDS = [
     {slug:"geniym",name:"Geniym",flag:"🇪🇸",country:"Испания",countryEn:"Spain",countryKz:"Испания",group:"perfume",desc:"Испания · нишевая парфюмерия",descEn:"Spain · niche perfumery",descKz:"Испания · ниша парфюмериясы"},
-    {slug:"hormone-paris",name:"Hormone Paris",flag:"🇫🇷",country:"Франция",countryEn:"France",countryKz:"Франция",group:"perfume",desc:"Франция · нишевая парфюмерия",descEn:"France · niche perfumery",descKz:"Франция · ниша парфюмериясы"},
     {slug:"and-honey",name:"&Honey",flag:"🇯🇵",country:"Япония",countryEn:"Japan",countryKz:"Жапония",group:"jp-skin",desc:"Япония · уход за волосами и кожей",descEn:"Japan · hair & skin care",descKz:"Жапония · шаш және тері күтімі"},
     {slug:"salon-link",name:"Salon Link",flag:"🇯🇵",country:"Япония",countryEn:"Japan",countryKz:"Жапония",group:"jp-skin",desc:"Япония · уход",descEn:"Japan · care",descKz:"Жапония · күтім"},
     {slug:"japan-gals",name:"Japan Gals",flag:"🇯🇵",country:"Япония",countryEn:"Japan",countryKz:"Жапония",group:"jp-skin",desc:"Япония · маски и уход за лицом",descEn:"Japan · masks & face care",descKz:"Жапония · маскалар және бет күтімі"},
@@ -2355,6 +2434,29 @@
           cur.style.opacity = '1';
         });
       }
+
+      /* ---------- MAGNETIC BUTTONS + SPOTLIGHT CARDS ----------
+         Делегирование на document: работает и для карточек каталога брендов,
+         которые Alpine дорисовывает из <template x-for> уже после DOMContentLoaded. */
+      document.addEventListener('mousemove', (e) => {
+        const mag = e.target.closest && e.target.closest('.aw-magnetic');
+        if (mag) {
+          const r = mag.getBoundingClientRect();
+          const relX = (e.clientX - r.left) / r.width - 0.5;
+          const relY = (e.clientY - r.top) / r.height - 0.5;
+          mag.style.transform = `translate(${(relX * 14).toFixed(1)}px, ${(relY * 10).toFixed(1)}px)`;
+        }
+        const spot = e.target.closest && e.target.closest('.aw-spotlight');
+        if (spot) {
+          const r = spot.getBoundingClientRect();
+          spot.style.setProperty('--x', ((e.clientX - r.left) / r.width * 100).toFixed(1) + '%');
+          spot.style.setProperty('--y', ((e.clientY - r.top) / r.height * 100).toFixed(1) + '%');
+        }
+      });
+      document.addEventListener('mouseout', (e) => {
+        const mag = e.target.closest && e.target.closest('.aw-magnetic');
+        if (mag && !(e.relatedTarget && mag.contains(e.relatedTarget))) mag.style.transform = '';
+      });
     }
   });
 </script>
@@ -2482,15 +2584,13 @@ document.addEventListener('DOMContentLoaded', function () {
 <!-- ===== Переключатель палитры (временный инструмент выбора темы для заказчика) ===== -->
 <div id="aw-theme-switch" role="group" aria-label="Выбор цветовой палитры">
   <span class="aw-theme-label">Палитра</span>
-  <button type="button" class="aw-theme-dot" data-set="mono"     title="Editorial — белая с чёрным" style="--c:linear-gradient(135deg,#FFFFFF 50%,#141416 50%)"></button>
-  <button type="button" class="aw-theme-dot" data-set="ocean"    title="Океан + коралл" style="--c:linear-gradient(135deg,#0173C4 50%,#FF5A36 50%)"></button>
-  <button type="button" class="aw-theme-dot" data-set="lagoon"   title="Лагуна"  style="--c:linear-gradient(135deg,#38CBE0,#009FBE)"></button>
-  <button type="button" class="aw-theme-dot" data-set="royal"    title="Роял"    style="--c:linear-gradient(135deg,#5A7BEB,#2B50DB)"></button>
-  <button type="button" class="aw-theme-dot" data-set="sapphire" title="Сапфир"  style="--c:linear-gradient(135deg,#2E6BD1,#15489E)"></button>
-  <button type="button" class="aw-theme-dot" data-set="aqua"     title="Аква"    style="--c:linear-gradient(135deg,#17B9CF,#0E93A8)"></button>
-  <button type="button" class="aw-theme-dot" data-set="azure"    title="Нефрит"  style="--c:linear-gradient(135deg,#13C494,#0A9E76)"></button>
-  <button type="button" class="aw-theme-dot" data-set="sky"      title="Роза"    style="--c:linear-gradient(135deg,#F1479E,#D6197A)"></button>
-  <button type="button" class="aw-theme-dot" data-set="steel"    title="Коралл"  style="--c:linear-gradient(135deg,#FF6B3D,#E4431B)"></button>
+  <button type="button" class="aw-theme-dot" data-set="sunrise"   title="Sunrise — синий + золото поровну" style="--c:linear-gradient(135deg,#0B2A44 50%,#C6A15B 50%)"></button>
+  <button type="button" class="aw-theme-dot" data-set="editorial" title="Editorial — строго, один акцент navy" style="--c:linear-gradient(135deg,#12283A 50%,#3A5670 50%)"></button>
+  <button type="button" class="aw-theme-dot" data-set="golden"    title="Golden Hour — тёплая, песочно-золотая" style="--c:linear-gradient(135deg,#F6E0A3,#C79A4C)"></button>
+  <button type="button" class="aw-theme-dot" data-set="sapphire"  title="Sapphire — холодная, премиальная" style="--c:linear-gradient(135deg,#17466B,#8FB2C9)"></button>
+  <button type="button" class="aw-theme-dot" data-set="wave"      title="Wave — бирюзово-волновая" style="--c:linear-gradient(135deg,#2E6E7E,#1D5680)"></button>
+  <button type="button" class="aw-theme-dot" data-set="graphite"  title="Graphite — смелая, чёрно-золотая" style="--c:linear-gradient(135deg,#1C1C1E 50%,#C6A15B 50%)"></button>
+  <button type="button" class="aw-theme-dot" data-set="terracotta" title="Terracotta — смелая, тёплая, пряная" style="--c:linear-gradient(135deg,#A8461F,#D4A857)"></button>
 </div>
 <style>
   #aw-theme-switch{position:fixed;right:16px;bottom:16px;z-index:9998;display:flex;align-items:center;gap:9px;
@@ -2506,7 +2606,8 @@ document.addEventListener('DOMContentLoaded', function () {
 </style>
 <script>
   (function(){
-    var KEY='aw-theme-v3';
+    var KEY='aw-theme-v4';
+    var VALID=['sunrise','editorial','golden','sapphire','wave','graphite','terracotta'];
     function apply(t){
       document.documentElement.setAttribute('data-theme', t);
       var dots=document.querySelectorAll('#aw-theme-switch .aw-theme-dot');
@@ -2514,7 +2615,7 @@ document.addEventListener('DOMContentLoaded', function () {
       try{localStorage.setItem(KEY,t);}catch(e){}
     }
     var saved=null; try{saved=localStorage.getItem(KEY);}catch(e){}
-    apply(saved||'mono');
+    apply(VALID.indexOf(saved)>-1 ? saved : 'sunrise');
     document.addEventListener('click',function(e){
       var b=e.target.closest && e.target.closest('#aw-theme-switch .aw-theme-dot');
       if(b){apply(b.getAttribute('data-set'));}
@@ -2572,38 +2673,6 @@ document.addEventListener('DOMContentLoaded', function () {
   }
   (function(){var b=document.getElementById('aw-totop');if(!b)return;window.addEventListener('scroll',function(){if(window.scrollY>600)b.classList.add('show');else b.classList.remove('show');},{passive:true});})();
   (function(){var y=document.getElementById('aw-year');if(y)y.textContent=new Date().getFullYear();})();
-
-  /* ---------- ОБЛОЖКА: высота шапки + премиальный параллакс при прокрутке ---------- */
-  (function(){
-    var cover = document.getElementById('aw-cover');
-    if (!cover) return;
-    var hdr = document.querySelector('header');
-    function setH(){
-      document.documentElement.style.setProperty('--aw-header-h', ((hdr && hdr.offsetHeight) || 64) + 'px');
-    }
-    setH();
-    window.addEventListener('resize', setH, { passive: true });
-    window.addEventListener('load', setH);
-    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
-    var inner = document.getElementById('aw-cover-inner');
-    var ticking = false;
-    function onScroll(){
-      if (ticking) return;
-      ticking = true;
-      requestAnimationFrame(function(){
-        var h = cover.offsetHeight || 1;
-        var p = Math.min(1, Math.max(0, window.scrollY / h));
-        if (inner) {
-          /* обложка мягко «утапливается» и гаснет, пока страница-книга наезжает сверху */
-          inner.style.transform = 'scale(' + (1 - p * 0.05).toFixed(4) + ') translateY(' + (p * 26).toFixed(1) + 'px)';
-          inner.style.opacity = (1 - p * 0.45).toFixed(3);
-        }
-        ticking = false;
-      });
-    }
-    window.addEventListener('scroll', onScroll, { passive: true });
-    onScroll();
-  })();
 </script>
 <!-- ===== Popup-форма заявки (открывается по CTA) ===== -->
 <div id="aw-modal" class="aw-modal" aria-hidden="true">
